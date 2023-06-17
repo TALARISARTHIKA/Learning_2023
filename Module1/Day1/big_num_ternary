@@ -1,0 +1,15 @@
+#include <stdio.h>
+int big_num(int, int);
+int main()
+{
+    int x,y,z;
+    printf("Enter the numbers");
+    scanf("%d%d",&x,&y);
+    z = big_num(x,y);
+    printf("The biggest of the two numbers %d",z);
+    
+}
+int big_num(int x,int y)
+{
+    return(x>y ? x : y);
+}
